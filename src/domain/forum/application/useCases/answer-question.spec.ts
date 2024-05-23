@@ -14,6 +14,7 @@ describe('Create answer', () => {
       questionId: '1',
       instructorId: '1',
       content: 'Nova resposta',
+      attachmentsIds: [],
     });
     expect(result.value?.answer.content).toEqual('Nova resposta');
     expect(answerRepositoryInMemory.answers[0].id).toEqual(
